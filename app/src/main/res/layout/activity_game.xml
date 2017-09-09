@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.navyakalale.login.GameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Question"
+        android:id="@+id/question"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLUEBLUEBLUE"
+        android:id="@+id/blueb"
+        android:layout_marginRight="15dp"
+        android:onClick="bOnClick"
+        android:layout_below="@+id/scoreBoard"
+        android:layout_toEndOf="@+id/question"
+        android:layout_marginTop="49dp"
+        android:background="@color/blue"
+        android:textColor="@color/blue"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GREENGREENGR"
+        android:id="@+id/greenb"
+        android:layout_marginRight="15dp"
+        android:onClick="gOnClick"
+        android:layout_alignTop="@+id/redb"
+        android:layout_alignStart="@+id/yellowb"
+        android:background="@color/green"
+        android:textColor="@color/green"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YELLOWYELLOW"
+        android:id="@+id/yellowb"
+        android:layout_marginRight="15dp"
+        android:onClick="yOnClick"
+        android:layout_marginStart="42dp"
+        android:layout_alignTop="@+id/blueb"
+        android:layout_alignParentStart="true"
+        android:background="@color/yellow"
+        android:textColor="@color/yellow"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REDREDREDRED"
+        android:id="@+id/redb"
+        android:layout_marginRight="15dp"
+        android:onClick="rOnClick"
+        android:layout_marginBottom="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/blueb"
+        android:background="@color/red"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Score: "
+        android:id="@+id/scoreBoard"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/blueb"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
